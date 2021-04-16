@@ -9,7 +9,6 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-
     
     var data:[String] = []
     var i = 0
@@ -36,8 +35,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         self.tableView.reloadData()
     }
     
-
-    
     var tableView = UITableView(frame: .zero,style: .grouped)
 
     override func viewDidLoad() {
@@ -57,8 +54,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         button2.setTitleColor(UIColor.white, for: .normal)
         button2.backgroundColor = .black
         button2.addTarget(self, action: #selector(onClickMinus), for: .touchUpInside)
-                
-
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -84,7 +79,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             make.height.width.equalTo(50)
             button2.layer.cornerRadius = 25
         }
-
         
     }
     
